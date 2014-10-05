@@ -1,8 +1,10 @@
 Electribe reverse engineering
 =============================
 
-My/other people's attempts to document our research of 
-the inner workings of the 'renesas SH-3 7709S' chip used by the electribe emx/esx.
+<center><img src="doc/tribes.jpg" style="height:200px"></center>
+
+A gitrepo which represents people's attempts to document our research of 
+the inner workings of theelectribe emx/esx.
 
 # Why 
 
@@ -10,6 +12,8 @@ Korg has not released any firmware, and released new korg electribes.
 It is fair to say that Korg abandoned the EMX/ESX machines.
 Actually I am by no means an reverse engineer, however nothing is documented
 either so here's a beginning.
+Reverse engineering can be a complete (fun) waste of time, but not impossible
+(think the [typhoon OS](http://en.wikipedia.org/wiki/Typhoon_2000) )
 
 # Specs
 
@@ -24,6 +28,8 @@ either so here's a beginning.
 * 8 bit -> boot flash chip: 4MB Flash, 8 bit (IC15 see page 2 on service manual)
 * 8 bit -> Nan Flash USER BACKUP (EMX: 128Mbit) (ESX: 256Mbit) (probably storage settings when power on/off)
 * 8 bit -> smartmedia user backup (4MB till 128MB)
+
+for more see the [service manual](doc/EMX_ESX_Service_Manual.pdf)
 
 # Factory reset:
 
@@ -51,10 +57,13 @@ How to start and operate the test mode:
     To proceed the SmartMedia test, it is required to prepare a SmartMedia whose capacity
     is more than 16MB.
 
+for more info see the [service manual](doc/EMX_ESX_Service_Manual.pdf)
+
 # Questions/Roadmap:
 
 Following questions are controversial and will eventually break somebody's electribe:
 
+* Is it worth it at all? :D
 * why does the service manual specify 
 * can the memory be upgraded, and would the OS still work.
 * can a bricked electribe be overwritten/restored with the original flash?
