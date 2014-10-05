@@ -21,9 +21,8 @@ Reverse engineering can be a complete (fun) waste of time, but not impossible
 * power: AC9V adaptor 3000ma 
 * 16 bit -> ESX/EMX processor: hitachi SH-3 7709S
 * 16 bit -> DSP chip: uPD77213, 120 mhz, 32x16bit rom, 18x16bit ram
-* 16 bit -> SRAM 2Mbit (256k x 16bit) 
-* uses SH77095 32 bit SDRAM memory: max 512Mbit = 256Mbit(x16) x2 for patterns, song,global,work,midi
-* 32bit -> ESX SDRAM: 128Mbit, (8Mx16) x2 
+* 16 bit -> SRAM 2Mbit chip (256k x 16bit) 
+* 32bit -> ESX SDRAM: 128Mbit, (8Mx16) x2 max 512Mbit = 256Mbit(x16) x2 for patterns, song,global,work,midi
 * 32bit -> EMX SDRAM: 64Mbit, (4Mx16) x2 
 * LCD: NJU6468 
 * 8 bit -> boot flash chip: 4MB Flash, 8 bit (IC15 see page 2 on service manual)
