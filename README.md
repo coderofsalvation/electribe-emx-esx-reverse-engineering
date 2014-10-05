@@ -4,7 +4,8 @@ Electribe reverse engineering
 <center><img src="doc/tribes.jpg" style="height:200px"></center>
 
 A gitrepo which represents people's attempts to document our research of 
-the inner workings of theelectribe emx/esx.
+the inner workings of the electribe emx/esx.
+All the firmware files are here for anyone to play with.
 
 # Why 
 
