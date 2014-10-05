@@ -1,7 +1,7 @@
 Electribe reverse engineering
 =============================
 
-<center><img src="doc/tribes.jpg" style="height:200px"></center>
+<center><img src="https://github.com/coderofsalvation/electribe-emx-esx-reverse-engineering/blob/master/doc/tribes.jpg" style="height:200px"></center>
 
 A gitrepo which represents people's attempts to document our research of 
 the inner workings of the electribe emx/esx.
@@ -30,7 +30,7 @@ Reverse engineering can be a complete (fun) waste of time, but not impossible
 * 8 bit -> Nan Flash USER BACKUP (EMX: 128Mbit) (ESX: 256Mbit) (probably storage settings when power on/off)
 * 8 bit -> smartmedia user backup (4MB till 128MB)
 
-for more see the [service manual](doc/EMX_ESX_Service_Manual.pdf)
+for more see the [service manual](https://github.com/coderofsalvation/electribe-emx-esx-reverse-engineering/blob/master/doc/EMX_ESX_Service_Manual.pdf)
 
 # Factory reset:
 
@@ -58,7 +58,7 @@ How to start and operate the test mode:
     To proceed the SmartMedia test, it is required to prepare a SmartMedia whose capacity
     is more than 16MB.
 
-for more info see the [service manual](doc/EMX_ESX_Service_Manual.pdf)
+for more info see the [service manual](https://github.com/coderofsalvation/electribe-emx-esx-reverse-engineering/blob/master/doc/EMX_ESX_Service_Manual.pdf)
 
 # Questions/Roadmap:
 
