@@ -199,11 +199,14 @@ Q: why does binwalk detect compressed data in 2 files, and the ESX only one?
 
     (same goes for the other ones)
 
-# EMX: Extract file using binwalk -e
+
+### Attempt #1: extract using binwalk -e
+
+# EMX
 
     (todo)
 
-# ESX: Extract file using binwalk -e
+# ESX
 
 Try to extract files from firmwarefile: ESX01012D.BDS:
 
@@ -491,3 +494,121 @@ Hex view of 25A6D.7z :
 
     0005a593
 
+Q: are these filenames in the beginning? And its data in the end? Or is it merely a stringtable?
+
+### Attempt #2: binwalk deflate
+
+    $ binwalk -X -e ESX0*
+
+    Scan Time:     2014-10-05 21:12:30
+    Target File:   ESX0101F.BFS
+    MD5 Checksum:  a493dd6561a8319170470ea34e1e27a1
+
+    DECIMAL       HEXADECIMAL     DESCRIPTION
+    --------------------------------------------------------------------------------
+    41104         0xA090          Raw deflate compression stream, uncompressed size >= 33787
+    53315         0xD043          Raw deflate compression stream, uncompressed size >= 33787
+    58630         0xE506          Raw deflate compression stream, uncompressed size >= 33787
+    58631         0xE507          Raw deflate compression stream, uncompressed size >= 33787
+    59542         0xE896          Raw deflate compression stream, uncompressed size >= 33787
+    59543         0xE897          Raw deflate compression stream, uncompressed size >= 33787
+    68076         0x109EC         Raw deflate compression stream, uncompressed size >= 33787
+    68588         0x10BEC         Raw deflate compression stream, uncompressed size >= 33787
+    110306        0x1AEE2         Raw deflate compression stream, uncompressed size >= 33787
+    110307        0x1AEE3         Raw deflate compression stream, uncompressed size >= 33787
+    110434        0x1AF62         Raw deflate compression stream, uncompressed size >= 33787
+    110435        0x1AF63         Raw deflate compression stream, uncompressed size >= 33787
+    118191        0x1CDAF         Raw deflate compression stream, uncompressed size >= 33787
+
+
+    Scan Time:     2014-10-05 21:12:51
+    Target File:   ESX0102D.BDS
+    MD5 Checksum:  6f6077105dfca37689247f8e3b59572f
+
+    DECIMAL       HEXADECIMAL     DESCRIPTION
+    --------------------------------------------------------------------------------
+
+
+    Scan Time:     2014-10-05 21:13:25
+    Target File:   ESX0102N.BSS
+    MD5 Checksum:  0621cb88d38e0a4179944f14f2ba5a81
+
+    DECIMAL       HEXADECIMAL     DESCRIPTION
+    --------------------------------------------------------------------------------
+    99291         0x183DB         Raw deflate compression stream, uncompressed size >= 33787
+    306819        0x4AE83         Raw deflate compression stream, uncompressed size >= 33787
+    392293        0x5FC65         Raw deflate compression stream, uncompressed size >= 33916
+    392302        0x5FC6E         Raw deflate compression stream, uncompressed size >= 33787
+    392303        0x5FC6F         Raw deflate compression stream, uncompressed size >= 33787
+    392306        0x5FC72         Raw deflate compression stream, uncompressed size >= 33787
+    395602        0x60952         Raw deflate compression stream, uncompressed size >= 33787
+    395603        0x60953         Raw deflate compression stream, uncompressed size >= 33787
+    395625        0x60969         Raw deflate compression stream, uncompressed size >= 33787
+    395626        0x6096A         Raw deflate compression stream, uncompressed size >= 33787
+    395629        0x6096D         Raw deflate compression stream, uncompressed size >= 33787
+    395630        0x6096E         Raw deflate compression stream, uncompressed size >= 33787
+    395633        0x60971         Raw deflate compression stream, uncompressed size >= 33787
+    395634        0x60972         Raw deflate compression stream, uncompressed size >= 33787
+    395637        0x60975         Raw deflate compression stream, uncompressed size >= 33787
+    395638        0x60976         Raw deflate compression stream, uncompressed size >= 33787
+    395641        0x60979         Raw deflate compression stream, uncompressed size >= 33787
+    395642        0x6097A         Raw deflate compression stream, uncompressed size >= 33787
+    395645        0x6097D         Raw deflate compression stream, uncompressed size >= 33787
+    395646        0x6097E         Raw deflate compression stream, uncompressed size >= 33787
+    395649        0x60981         Raw deflate compression stream, uncompressed size >= 33787
+    395650        0x60982         Raw deflate compression stream, uncompressed size >= 33787
+    395653        0x60985         Raw deflate compression stream, uncompressed size >= 33787
+    395654        0x60986         Raw deflate compression stream, uncompressed size >= 33787
+    395657        0x60989         Raw deflate compression stream, uncompressed size >= 33787
+    395658        0x6098A         Raw deflate compression stream, uncompressed size >= 33787
+    395661        0x6098D         Raw deflate compression stream, uncompressed size >= 33787
+    395662        0x6098E         Raw deflate compression stream, uncompressed size >= 33787
+    395665        0x60991         Raw deflate compression stream, uncompressed size >= 33787
+    395666        0x60992         Raw deflate compression stream, uncompressed size >= 33787
+    395669        0x60995         Raw deflate compression stream, uncompressed size >= 33787
+    395670        0x60996         Raw deflate compression stream, uncompressed size >= 33787
+    395673        0x60999         Raw deflate compression stream, uncompressed size >= 33787
+    395674        0x6099A         Raw deflate compression stream, uncompressed size >= 33787
+    395677        0x6099D         Raw deflate compression stream, uncompressed size >= 33787
+    395678        0x6099E         Raw deflate compression stream, uncompressed size >= 33787
+    396815        0x60E0F         Raw deflate compression stream, uncompressed size >= 33884
+    396823        0x60E17         Raw deflate compression stream, uncompressed size >= 33839
+    396830        0x60E1E         Raw deflate compression stream, uncompressed size >= 33786
+    396832        0x60E20         Raw deflate compression stream, uncompressed size >= 33786
+    396834        0x60E22         Raw deflate compression stream, uncompressed size >= 33787
+    396835        0x60E23         Raw deflate compression stream, uncompressed size >= 33787
+    396840        0x60E28         Raw deflate compression stream, uncompressed size >= 33787
+    396841        0x60E29         Raw deflate compression stream, uncompressed size >= 33787
+    396846        0x60E2E         Raw deflate compression stream, uncompressed size >= 33787
+    396847        0x60E2F         Raw deflate compression stream, uncompressed size >= 33787
+    396852        0x60E34         Raw deflate compression stream, uncompressed size >= 33787
+    396853        0x60E35         Raw deflate compression stream, uncompressed size >= 33787
+    396858        0x60E3A         Raw deflate compression stream, uncompressed size >= 33787
+    396859        0x60E3B         Raw deflate compression stream, uncompressed size >= 33787
+    396864        0x60E40         Raw deflate compression stream, uncompressed size >= 33787
+    396865        0x60E41         Raw deflate compression stream, uncompressed size >= 33787
+    396870        0x60E46         Raw deflate compression stream, uncompressed size >= 33787
+    396871        0x60E47         Raw deflate compression stream, uncompressed size >= 33787
+    396876        0x60E4C         Raw deflate compression stream, uncompressed size >= 33787
+    396877        0x60E4D         Raw deflate compression stream, uncompressed size >= 33787
+    396882        0x60E52         Raw deflate compression stream, uncompressed size >= 33787
+    396883        0x60E53         Raw deflate compression stream, uncompressed size >= 33787
+    396888        0x60E58         Raw deflate compression stream, uncompressed size >= 33787
+    396889        0x60E59         Raw deflate compression stream, uncompressed size >= 33787
+    396894        0x60E5E         Raw deflate compression stream, uncompressed size >= 33787
+    396895        0x60E5F         Raw deflate compression stream, uncompressed size >= 33787
+    396900        0x60E64         Raw deflate compression stream, uncompressed size >= 33787
+    396901        0x60E65         Raw deflate compression stream, uncompressed size >= 33787
+    396906        0x60E6A         Raw deflate compression stream, uncompressed size >= 33787
+    396907        0x60E6B         Raw deflate compression stream, uncompressed size >= 33787
+    396912        0x60E70         Raw deflate compression stream, uncompressed size >= 33787
+    396913        0x60E71         Raw deflate compression stream, uncompressed size >= 33787
+    396918        0x60E76         Raw deflate compression stream, uncompressed size >= 33787
+    396919        0x60E77         Raw deflate compression stream, uncompressed size >= 33787
+    396924        0x60E7C         Raw deflate compression stream, uncompressed size >= 33787
+    396925        0x60E7D         Raw deflate compression stream, uncompressed size >= 33787
+    1523395       0x173EC3        Raw deflate compression stream, uncompressed size >= 33787
+    1699607       0x19EF17        Raw deflate compression stream, uncompressed size >= 33787
+    1705318       0x1A0566        Raw deflate compression stream, uncompressed size >= 33787
+
+Binwalk's output looked promising, but looking at the produced files, I could not get any readable string using hexdump..
