@@ -64,7 +64,6 @@ for more info see the [service manual](https://github.com/coderofsalvation/elect
 Following questions are controversial and will eventually break somebody's electribe:
 
 * Is it worth it at all? :D
-* why does the service manual specify 
 * can the memory be upgraded, and would the OS still work.
 * can a bricked electribe be overwritten/restored with the original flash?
 * can somebody learn something from the JTAG connector on the PCB?
