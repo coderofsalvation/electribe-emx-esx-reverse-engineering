@@ -31,6 +31,10 @@ Q: what modifications are needed in order to succesfully flash an ESX with EMX f
 
 Q: what is the ROM ICE chip on page 1 of the service manual
 
+Q: Can the samples of the EMX be replaced?
+
+A: Probably yes, but not easily. The ESX uses 2x64MB SDRAM memory boards, and the EMX only 1x64MB. The ESX firmware (obviously) contains routines to change the SDRAM contents. In theory one could create a special firmware which would only have the purpose to flash the SDRAM using a 64MB prepared samplepack (SDRAM-dump e.g.) from a smartmedia- or SD-card.
+
 # Tools used so far: 
 
 * binwalk
