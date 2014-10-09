@@ -68,7 +68,8 @@ Q: Is it worth it at all? :D
 Q: can the memory be upgraded, and would the OS still work.
 
 Q: can a bricked electribe be overwritten/restored with the original flash?
-A: most likely, see [this issue](https://github.com/coderofsalvation/electribe-emx-esx-reverse-engineering/issues/1)
+
+A: maybe not! see [this issue](https://github.com/coderofsalvation/electribe-emx-esx-reverse-engineering/issues/1)
 
 Q: can somebody learn something from the JTAG connector on the PCB?
 
