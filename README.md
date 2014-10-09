@@ -63,13 +63,20 @@ for more info see the [service manual](https://github.com/coderofsalvation/elect
 
 Following questions are controversial and will eventually break somebody's electribe:
 
-* Is it worth it at all? :D
-* can the memory be upgraded, and would the OS still work.
-* can a bricked electribe be overwritten/restored with the original flash?
-* can somebody learn something from the JTAG connector on the PCB?
-* what does the EMX/ESX setting on the PCB board do (indicates control surface?)
-* what modifications are needed in order to succesfully flash an ESX with EMX firmware (and vice versa)
-* what is the ROM ICE chip on page 1 of the service manual
+Q: Is it worth it at all? :D
+
+Q: can the memory be upgraded, and would the OS still work.
+
+Q: can a bricked electribe be overwritten/restored with the original flash?
+A: most likely, see [this issue](https://github.com/coderofsalvation/electribe-emx-esx-reverse-engineering/issues/1)
+
+Q: can somebody learn something from the JTAG connector on the PCB?
+
+Q: what does the EMX/ESX setting on the PCB board do (indicates control surface?)
+
+Q: what modifications are needed in order to succesfully flash an ESX with EMX firmware (and vice versa)
+
+Q: what is the ROM ICE chip on page 1 of the service manual
 
 # Tools used so far: 
 
