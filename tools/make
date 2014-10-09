@@ -1,0 +1,10 @@
+g++ -o disass disass.cpp
+if [[ -f disass ]]; then
+  ./disass ../esx/ESX0102D.BDS
+  mv output.txt ../doc/esx.disass.txt
+  hexdump -C ../esx/ESX0102D.BDS > ../doc/esx.hex.txt
+
+  ./disass ../emx/EMX0100D.BDA
+  mv output.txt ../doc/emx.disass.txt
+  hexdump -C ../emx/EMX0100D.BDA > ../doc/emx.hex.txt
+fi
