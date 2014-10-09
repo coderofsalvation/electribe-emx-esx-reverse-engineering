@@ -9,7 +9,7 @@ All the firmware files are here for anyone to play with.
 
 # Everything is in the Wiki
 
-All gathered information is stored in the [Wiki](wiki), the repo itself serves a storage of data- and researchfiles mentioned in the wiki.
+All gathered information is stored in the [Wiki](https://github.com/coderofsalvation/electribe-emx-esx-reverse-engineering), the repo itself serves a storage of data- and researchfiles mentioned in the wiki.
 
 # Questions/Roadmap:
 
